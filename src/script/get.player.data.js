@@ -1,6 +1,9 @@
 'use strict'
 
 const client = require('cheerio-httpcli');
+const moment = require('moment');
+
+const year = moment().format('YYYY');
 
 const teams = {
   1: 'G', 2: 'S', 3: 'DB', 4: 'D', 5: 'T', 6: 'C',
@@ -24,9 +27,9 @@ Object.keys(teams).forEach(teamNo => {
             // find name and no from HTML
             const name = el.children[3].children[0].children[0].data;
             const no = el.children[1].children[0].data;
-            if (initial) { console.log('team,type,name,no'); initial = false; }
+            if (initial) { console.log('team,type,name,no,year'); initial = false; }
             // output
-            console.log(`${teams[teamNo]},${typeInitials},${name},${no}`)
+            console.log(`${teams[teamNo]},${typeInitials},${name},${no},${year}`)
           }
         }
       })

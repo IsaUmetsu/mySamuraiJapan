@@ -26,13 +26,6 @@ class HomeScreen extends Component {
         />
       ),
       headerTitle: <LogoTitle />,
-      headerRight: 
-        <Button
-          onPress={navigation.getParam('increaseCount')}
-          title="+1"
-          color="#fff"
-        />
-      ,
     }
   }
 
@@ -41,7 +34,6 @@ class HomeScreen extends Component {
   }
 
   state = {
-    count: 0,
   }
 
   _increaseCount = () => this.setState({ count: this.state.count + 1 });

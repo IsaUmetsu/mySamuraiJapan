@@ -1,3 +1,7 @@
 node_modules/**/*
 .expo/*
 npm-debug.*
+iPhone 8/
+src/script/*.csv
+*.mwb*
+.DS_Store
