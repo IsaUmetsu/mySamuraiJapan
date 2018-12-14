@@ -1,5 +1,3 @@
-'use strict'
-
 const client = require('cheerio-httpcli');
 const moment = require('moment');
 
@@ -9,6 +7,7 @@ const teams = {
   1: 'G', 2: 'S', 3: 'DB', 4: 'D', 5: 'T', 6: 'C',
   7: 'L', 8: 'F', 9: 'M', 11: 'Bs', 12: 'H',  376: 'E'
 }
+
 const playType = { p: '投手', b: '野手' }
 
 let initial = true;

@@ -13,8 +13,8 @@ import SwitchExample from './switch';
 export default class TutorialPoint extends Component {
   render() {
     return (
-      <SwitchExample />
-      // <PickerExample />
+      // <SwitchExample />
+      <PickerExample />
       // <Routes />
       // <Animations />
       // <HttpExample />

@@ -5,3 +5,4 @@ iPhone 8/
 src/script/*.csv
 *.mwb*
 .DS_Store
+./api-m-s-j/**/*
